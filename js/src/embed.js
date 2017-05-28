@@ -1,8 +1,8 @@
-//Never_yu'Blog -  https://neveryu.github.io/
+//6er'Blog -  https://wolf6.github.io/
 //管理员判断开始
 function sskadmin(e) {
     var ssk = '';
-    if(e=='6326435153992221442'){
+    if(e=='zengluyang'){
         ssk = '<span class="user_admin">博主</span> '
     }
     return ssk;
