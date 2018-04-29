@@ -85,9 +85,9 @@
 <meta name="description" content="前情提要什么是HEVC、苹果为什么选择HEVC，之前在503 hevc introduce已经介绍过了，总的来说就是为了4K甚至更大的分辨率、高比特深度（high depths）比如10-bit、更宽的色彩空间，做这些都需要更高的压缩率来支撑，hevc相对H.264压缩率提高了40%，对于相机采集的场景，相比H.264压缩率提升了50%  今天讲的主要是如何应用，分四个主题：  Access Pl">
 <meta name="keywords" content="HEVC,H.265,HEIF,WWDC,2017,编码原理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Session 511 Working with HEIF and HEVC">
-<meta property="og:url" content="https://wolf6.github.io/2017/08/27/Session-511-Working-withHEIF-and-HEVC/index.html">
-<meta property="og:site_name" content="6er&#39;s Blog">
+<meta property="og:title" content="WWDC 2017 Session 511 Working with HEIF and HEVC">
+<meta property="og:url" content="https://wolf6.github.io/2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/index.html">
+<meta property="og:site_name" content="谷雨">
 <meta property="og:description" content="前情提要什么是HEVC、苹果为什么选择HEVC，之前在503 hevc introduce已经介绍过了，总的来说就是为了4K甚至更大的分辨率、高比特深度（high depths）比如10-bit、更宽的色彩空间，做这些都需要更高的压缩率来支撑，hevc相对H.264压缩率提高了40%，对于相机采集的场景，相比H.264压缩率提升了50%  今天讲的主要是如何应用，分四个主题：  Access Pl">
 <meta property="og:image" content="http://ovbu9b92e.bkt.clouddn.com/choose_codec.jpg">
 <meta property="og:image" content="http://ovbu9b92e.bkt.clouddn.com/capturemoviewithhevc.jpg">
@@ -120,9 +120,9 @@
 <meta property="og:image" content="http://ovbu9b92e.bkt.clouddn.com/capturedelegate.jpg">
 <meta property="og:image" content="http://ovbu9b92e.bkt.clouddn.com/oldwaysave.jpg">
 <meta property="og:image" content="http://ovbu9b92e.bkt.clouddn.com/newwaysave.jpg">
-<meta property="og:updated_time" content="2017-11-30T14:26:31.000Z">
+<meta property="og:updated_time" content="2018-04-29T14:55:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Session 511 Working with HEIF and HEVC">
+<meta name="twitter:title" content="WWDC 2017 Session 511 Working with HEIF and HEVC">
 <meta name="twitter:description" content="前情提要什么是HEVC、苹果为什么选择HEVC，之前在503 hevc introduce已经介绍过了，总的来说就是为了4K甚至更大的分辨率、高比特深度（high depths）比如10-bit、更宽的色彩空间，做这些都需要更高的压缩率来支撑，hevc相对H.264压缩率提高了40%，对于相机采集的场景，相比H.264压缩率提升了50%  今天讲的主要是如何应用，分四个主题：  Access Pl">
 <meta name="twitter:image" content="http://ovbu9b92e.bkt.clouddn.com/choose_codec.jpg">
 
@@ -145,9 +145,9 @@
 
 
 
-  <link rel="canonical" href="https://wolf6.github.io/2017/08/27/Session-511-Working-withHEIF-and-HEVC/"/>
+  <link rel="canonical" href="https://wolf6.github.io/2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/"/>
 
-  <title> Session 511 Working with HEIF and HEVC | 6er's Blog </title>
+  <title> WWDC 2017 Session 511 Working with HEIF and HEVC | 谷雨 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -178,7 +178,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">6er's Blog</span>
+      <span class="site-title">谷雨</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -289,7 +289,7 @@
             
             
               
-                Session 511 Working with HEIF and HEVC
+                WWDC 2017 Session 511 Working with HEIF and HEVC
               
             
           </h1>
@@ -331,8 +331,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/08/27/Session-511-Working-withHEIF-and-HEVC/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/27/Session-511-Working-withHEIF-and-HEVC/" itemprop="commentsCount"></span>
+                <a href="/2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -522,13 +522,13 @@
     <div id="QR" style="display: none;">
       
         <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="/reward/reward_wechat.png" alt="6er WeChat Pay"/>
+          <img id="wechat_qr" src="/reward/reward_wechat.png" alt="谷雨 WeChat Pay"/>
           <p>微信打赏</p>
         </div>
       
       
         <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="/reward/reward_alipay.png" alt="6er Alipay"/>
+          <img id="alipay_qr" src="/reward/reward_alipay.png" alt="谷雨 Alipay"/>
           <p>支付宝打赏</p>
         </div>
       
@@ -562,13 +562,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/27/Session-503-Introducing-HEIF-and-HEVC/" rel="next" title="Session 503 Introducing HEIF and HEVC">
-                <i class="fa fa-chevron-left"></i> Session 503 Introducing HEIF and HEVC
+              <a href="/2017/08/27/wwdc-2017-Session-503-Introducing-HEIF-and-HEVC/" rel="next" title="WWDC 2017 Session 503 Introducing HEIF and HEVC">
+                <i class="fa fa-chevron-left"></i> WWDC 2017 Session 503 Introducing HEIF and HEVC
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/20/《原则》读书笔记/" rel="prev" title="《原则》读书笔记">
+                《原则》读书笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -636,14 +640,14 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/avatar/avatar.png"
-               alt="6er" />
-          <p class="site-author-name" itemprop="name">6er</p>
+               alt="谷雨" />
+          <p class="site-author-name" itemprop="name">谷雨</p>
           <p class="site-description motion-element" itemprop="description">“Live well, Laugh often, Love much.”</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -651,7 +655,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -660,7 +664,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -753,12 +757,12 @@
 
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">6er</span>
+  <span class="author" itemprop="copyrightHolder">谷雨</span>
 </div>
 
 <div class="powered-by">
@@ -855,9 +859,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'liulangblog';
-      var disqus_identifier = '2017/08/27/Session-511-Working-withHEIF-and-HEVC/';
-      var disqus_title = "Session 511 Working with HEIF and HEVC";
-      var disqus_url = 'https://wolf6.github.io/2017/08/27/Session-511-Working-withHEIF-and-HEVC/';
+      var disqus_identifier = '2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/';
+      var disqus_title = "WWDC 2017 Session 511 Working with HEIF and HEVC";
+      var disqus_url = 'https://wolf6.github.io/2017/08/27/wwdc-2017-Session-511-Working-withHEIF-and-HEVC/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
